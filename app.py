@@ -13,7 +13,7 @@ def home():
 #yukaridaki bolum sonrasi template.html icindeki hareketleri okumaliyiz.
 
 @app.route('/predict', methods = ['POST'])
-def predict():
+def predicto():
     
     #Arayüzdeki text'lere girilen değerleri alıp hesaplama sonrası tekrar arayüze göndereceğiz.
     int_features = [int(x) for x in request.form.values()]
